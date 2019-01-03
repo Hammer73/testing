@@ -1,0 +1,21 @@
+
+class Weather:
+
+    """Weather is a class to add temperatures to the weather station.
+     temp_out_f is the temperature outdoor in Fahrenheit
+     temp_in_f is the temperatures indoor in Fahrenheit
+     """
+
+    def __init__(self, temp_out_f, temp_in_f):
+        self.temp_out = temp_out_f
+        self.temp_in = temp_in_f
+
+
+def main():
+    pumpkin = Weather(104, 71)
+    ac = (pumpkin.temp_out - 32) * 5.0 / 9.0
+    print(f'The outdoor temperature is { pumpkin.temp_out } Fahrenheit. That is {ac:3.3} Celsius. ')
+    print(f'The indoor temperature is { pumpkin.temp_in } degrees')
+
+
+if __name__ == '__main__': main()
